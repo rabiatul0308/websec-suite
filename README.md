@@ -22,8 +22,17 @@
 ## Prerequisites & Build
 
 * **Rust Toolchain** (stable, `cargo` & `rustc` 1.75+)
-* **Optional External CLI Tools**: `nmap` (for Module 1 host/port reconnaissance)
+* **Optional External CLI Tools**: `nmap` (for Module 1 host/port reconnaissance
 
+## Legal Warning & Liability Disclaimer
+
+> [!WARNING]
+> **Authorized Use Only** — This tool is strictly intended for educational purposes, local lab experimentation, and authorized security assessments.
+
+* **Permitted Scope:** Use this suite solely within controlled environments (such as local VMs, DVWA, or PortSwigger Web Security Academy) or on systems where you hold **explicit prior written authorization** from the asset owner.
+* **Prohibited Activities:** Running active scans, fuzzing, packet sniffing, or exploitation modules against public, corporate, educational, or third-party infrastructure without permission is strictly prohibited and may violate applicable cybercrime and data protection laws (including Indonesia's UU ITE and UU PDP).
+* **Limitation of Liability:** The author and contributors assume **no responsibility or liability** for any misuse, unauthorized access, service disruption, or legal consequences resulting from the use of this software. Users bear full legal and ethical responsibility for their actions.
+  
 ```bash
 git clone [https://github.com/rabiatul0308/websec-suite.git](https://github.com/rabiatul0308/websec-suite.git)
 cd websec-suite
