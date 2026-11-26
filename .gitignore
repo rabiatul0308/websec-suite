@@ -10,3 +10,5 @@
 .env.*
 .DS_Store
 Thumbs.db
+
+websec_audit_report_*.html
