@@ -1,0 +1,34 @@
+﻿[package]
+name = "websec-proxy"
+version = "3.0.0"
+edition = "2021"
+description = "Forensic-Grade Security Suite: Origin IP Unmasker, WAF/IDS Fingerprinter, Deep Recon, SQLi & Exploit Verifier"
+
+[dependencies]
+eframe = "0.29"
+reqwest = { version = "0.12", default-features = false, features = [
+    "blocking",
+    "rustls-tls",
+    "cookies",
+    "gzip",
+] }
+scraper = "0.21"
+url = "2.5"
+base64 = "0.22"
+regex = "1.11"
+tokio = { version = "1.43", features = [
+    "rt-multi-thread",
+    "net",
+    "time",
+    "io-util",
+] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
